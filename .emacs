@@ -2,7 +2,7 @@
 (setq make-backup-files nil)
 ; disable auto save
 (setq auto-save-default nil)
-
+; hello world again
 ; Remap apple key to meta
 (setq mac-command-modifier 'control)
 
