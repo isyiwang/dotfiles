@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+# PATH variables
+export PATH=/usr/local/share/npm/bin:$PATH
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -8,11 +11,16 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="isaac"
 
 # Example aliases
-alias grep='GREP_COLOR="1;37;41" LANG=C grep --color=auto -rn -C 3'
+alias rgrep='grep -rn --color=auto'
+alias grp='GREP_COLOR="1;37;41" LANG=C grep --color=auto -rn -C 3'
 alias rbt='ruby -Ilib:test'
 alias rk='rake'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Symlinks
+ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /Users/isaac/bin/subl
+ln -s "/Users/isaac/code/dotfiles" /Users/isaac/dotfiles
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -39,3 +47,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 source /usr/local/bin/virtualenvwrapper.sh
 export WORKON_HOME=~/Envs
+
+__git_files () { 
+    _wanted files expl 'local files' _files     
+}
