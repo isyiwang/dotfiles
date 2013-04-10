@@ -19,8 +19,8 @@ alias rk='rake'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Symlinks
-ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /Users/isaac/bin/subl
-ln -s "/Users/isaac/code/dotfiles" /Users/isaac/dotfiles
+# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /Users/isaac/bin/subl
+# ln -s "/Users/isaac/code/dotfiles" /Users/isaac/dotfiles
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

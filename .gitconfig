@@ -23,10 +23,12 @@
 	po = push origin HEAD
 	rbm = rebase upstream/master
 	sl = stash list
-	ss = stash show
+	sshow = stash show -p
 	sa = stash apply
 	sp = stash pop
 	ss = stash save
+	sd = stash drop
+	al = config --get-regexp alias
 [core]
 	editor = emacs
 [color]
