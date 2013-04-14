@@ -3,6 +3,7 @@ ZSH=$HOME/.oh-my-zsh
 
 # PATH variables
 export PATH=/usr/local/share/npm/bin:$PATH
+export PATH=/Users/isaac/android-sdk-macosx/tools:/Users/isaac/android-sdk-macosx/platform-tools:$PATH
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/

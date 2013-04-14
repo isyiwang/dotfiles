@@ -27,10 +27,14 @@
 (column-number-mode 1)
 
 (setq standard-indent 2)
+(setq js-indent-level 2)
 
 ;; ========== Add custom el files in the ~/.emacs.d directory  ==========
 
 (add-to-list 'load-path "~/.emacs.d")
-(require 'linum)
-(add-hook 'find-file-hook (lambda () (linum-mode 1)))
 (setq linum-format "%d ")
+(require 'smart-tab)
+(global-smart-tab-mode 1)
+
+(require 'haml-mode)
+
