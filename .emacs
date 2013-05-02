@@ -42,6 +42,8 @@
 
 (require 'haml-mode)
 
+(require 'sass-mode)
+
 (require 'jade-mode)    
 
 (custom-set-variables
