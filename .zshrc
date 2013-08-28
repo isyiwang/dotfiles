@@ -3,13 +3,12 @@ ZSH=$HOME/.oh-my-zsh
 
 # PATH variables
 export PATH=/usr/local/share/npm/bin:$PATH
-export PATH=/Users/isaac/android-sdk-macosx/tools:/Users/isaac/android-sdk-macosx/platform-tools:$PATH
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="isaac"
+ZSH_THEME="alanpeabody"
 
 # Example aliases
 alias rgrep='grep -rn --color=auto'
@@ -46,9 +45,10 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-source /usr/local/bin/virtualenvwrapper.sh
-export WORKON_HOME=~/Envs
 
 __git_files () { 
     _wanted files expl 'local files' _files     
 }
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
