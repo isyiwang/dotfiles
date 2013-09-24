@@ -19,8 +19,15 @@
 	st = status
 	co = checkout
 	c = commit
+	cm = commit -m
+	cam = commit -am
+	br = branch
+	db = branch -D
+	dub = "!f() { git push upstream :$2; }; f"
 	fu = fetch upstream
 	po = push origin HEAD
+	pud = push upstream HEAD:development
+	rbd = rebase upstream/development
 	rbm = rebase upstream/master
 	sl = stash list
 	sshow = stash show -p
@@ -29,6 +36,11 @@
 	ss = stash save
 	sd = stash drop
 	al = config --get-regexp alias
+	rbc = rebase --continue
+	rbi = rebase -i
+	puh = push upstream HEAD
+	la = "!git config -l | grep alias | cut -c 7-"
+	com = "!f() { git fetch upstream && git checkout -b $1 upstream/master; }; f"
 [core]
 	editor = emacs
 [color]
